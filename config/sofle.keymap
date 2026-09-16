@@ -106,11 +106,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4    &kp F5                      &kp F6     &kp F7         &kp F8     &kp F9     &kp F10   &kp F11
-&trans  &kp N1  &kp N2  &kp N3  &kp LPAR  &kp RPAR                    &kp CARET  &kp AMPERSAND  &kp PRCNT  &kp SEMI   &kp SQT   &kp F12
-&trans  &kp N4  &kp N5  &kp N6  &kp LBKT  &kp RBKT                    &kp MINUS  &kp EQUAL      &kp DLLR   &kp COLON  &kp DQT   &kp PIPE
-&trans  &kp N7  &kp N8  &kp N9  &kp LT    &kp GT    &trans    &trans  &kp ASTRK  &kp PLUS       &kp PIPE   &kp QMARK  &kp PIPE  &trans
-                &kp N0  &trans  &trans    &trans    &trans    &trans  &trans     &trans         &trans     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4          &kp F5                             &kp F6     &kp F7         &kp F8     &kp F9     &kp F10   &kp F11
+&trans  &kp N1  &kp N2  &kp N3  &kp LPAR        &kp RPAR                           &kp CARET  &kp AMPERSAND  &kp PRCNT  &kp SEMI   &kp SQT   &kp F12
+&trans  &kp N4  &kp N5  &kp N6  &kp LBKT        &kp RBKT                           &kp MINUS  &kp EQUAL      &kp DLLR   &kp COLON  &kp DQT   &kp PIPE
+&trans  &kp N7  &kp N8  &kp N9  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans  &kp ASTRK  &kp PLUS       &kp PIPE   &kp QMARK  &kp PIPE  &trans
+                &kp N0  &trans  &trans          &trans           &trans    &trans  &trans     &trans         &trans     &trans
             >;
 
             sensor-bindings =
@@ -151,11 +151,11 @@
 
             display-name = "System";
             bindings = <
-&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
-&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                  &none  &none  &none  &none  &none  &none
-&none              &none         &none         &none         &none         &none                           &none  &none  &none  &none  &none  &none
-&none              &none         &none         &none         &none         &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
-                                 &none         &none         &none         &none           &none    &none  &none  &none  &none  &none
+&bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))  &kp LA(LC(F6))
+&ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                  &none           &none           &none           &none           &none           &none
+&none              &none         &none         &none         &none         &none                           &none           &none           &none           &none           &none           &none
+&none              &none         &none         &none         &none         &caps_word      &none    &none  &none           &none           &none           &none           &none           &none
+                                 &none         &none         &none         &none           &none    &none  &none           &none           &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
